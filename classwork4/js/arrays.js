@@ -138,24 +138,8 @@ colors.unshift("purple", "orange");
 colors.splice(1, 2, "greenyellow", "silver");
 // ["purple", "greenyellow", "silver", "yellow", "black", "pink"]
 
-// разобрать методы массивов
-// slice
-// includes
-// concat
-// indexOf / lastIndexOf
 
-/* не разбирать
-colors.sort()
-colors.map()
-colors.filter()
-colors.every()
-colors.forEach()
-*/
 
-// в собственной ветке - индексация (git add), commit
 
-// Дома:
-// 1. переключаемся в master - git pull
-// 2. переключаемся в свою - слияние с мастер
 
 
