@@ -114,6 +114,9 @@ console.log(arr);
 
 // замыкания
 function add(x){
+    // lexicalEnvironment - хранит переменные, объявленные в функции
+    // scope - хранит ссылку на лексическое окружение, в котором была
+    // объявлена функция
     let addValue = x;
     return function (num){
         return addValue + num;
@@ -122,7 +125,11 @@ function add(x){
 /*String, Number, Function, Array, Boolean*/
 let add1 = add(1);
 console.log(add1);
-console.log(add1(56));
+console.log(add1(56)); // 57
+
+let add10 = add(10);
+console.log(add10(30)); // 40
+
 
 
 
