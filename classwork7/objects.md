@@ -27,11 +27,11 @@
 2. `obj['user name']` - запись 'через квадратные скобки';
 
       
-      user.password = 'fff2323';
-      user['home address'] = 'г. Москва, ул. Вернадского, дом 43';
-
-      console.log(user.password);
-      console.log(user['home address']); 
+          user.password = 'fff2323';
+          user['home address'] = 'г. Москва, ул. Вернадского, дом 43';
+    
+          console.log(user.password);
+          console.log(user['home address']); 
 
 Имена свойств объекта могут быть строками, или тем, что может быть сконвертировано в строку. 
 
