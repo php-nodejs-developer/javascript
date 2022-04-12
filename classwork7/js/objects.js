@@ -113,7 +113,35 @@ cssBook = {
 // перебор объектов осуществляется циклом for in
 // на каждой итерации цикла в переменную propName копируется
 // НАЗВАНИЕ свойства объекта  (ключ). Не значение
-for (let propName in cssBook) {
+let items = {
+    piano: {
+        title: "Пианино",
+        price: 3000,
+        count: 25
+    },
+    guitar: {
+        title: "Гитара",
+        price: 1200,
+        count: 40
+    },
+    drum: {
+        title: "Барабаны",
+        price: 2700,
+        count: 12
+    },
+    flute: {
+        title: "Флейта",
+        price: 900,
+        count: 50
+    },
+    harp: {
+        title: "Арфа",
+        price: 3400,
+        count: 5
+    }
+};
+let o = {};
+for (let propName in items) {
     console.log(propName); // имя свойства
     console.log(cssBook[propName]); // значение свойства
 }

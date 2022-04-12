@@ -119,6 +119,7 @@ function add(x){
     // объявлена функция
     let addValue = x;
     return function (num){
+        // scope
         return addValue + num;
     }
 }
