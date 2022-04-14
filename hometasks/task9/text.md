@@ -1,59 +1,60 @@
 ### Задание 1
 Написать функцию `generateTable`, которая принимает на вход массив объектов и создает таблицу.
-Функция не должна быть привязаны к конкретным названиям свойств. Заголовки ячеек - названия свойств вложенных объектов.
-Например, для articles заголовками будут: id, title, text, author; для goods заголовками будут: title, price, count и тп.
+Функция не должна быть привязана к конкретным названиям свойств. Заголовки ячеек - названия свойств в верхнем регистре.
+Пример того, что должно получиться на изображении [tables.png](tables.png)
 
-        Массивы для тестирования:
+
+        Массивы для проверки:
         let articles = [
             {
                 id: 1,
                 title: "JS",
-                text: "Статья про JS",
-                author: "Александр"
+                text: "About JS",
+                author: "Max"
             },
             {
                 id: 2,
                 title: "PHP",
-                text: "Статья про PHP",
-                author: "Виталий"
+                text: "About PHP",
+                author: "Ivan"
             },
             {
                 id: 3,
-                title: "Базы Данных",
-                text: "Статья про Базы Данных",
-                author: "Евгения"
+                title: "DataBase",
+                text: "About DB",
+                author: "Paul"
             },
             {
                 id: 4,
                 title: "HTML",
-                text: "Статья про HTML",
-                author: "Виталий"
+                text: "About HTML",
+                author: "Paul"
             }
         ];
 
         let goods = [
             {
-                title: "Пианино",
+                title: "Piano",
                 price: 3000,
                 count: 25
             },
             {
-                title: "Гитара",
+                title: "Guitar",
                 price: 1200,
                 count: 40
             },
             {
-                title: "Барабаны",
+                title: "Drum",
                 price: 2700,
                 count: 12
             },
             {
-                title: "Флейта",
+                title: "Flute",
                 price: 900,
                 count: 50
             },
             {
-                title: "Арфа",
+                title: "Harp",
                 price: 3400,
                 count: 5
             }
@@ -63,15 +64,14 @@
         generateTable(articles); - генерация таблицы со статьями
         generateTable(goods); - генерация таблицы с товарами
 
-
-
 ### Задание 2
-Написать функцию `generateField(n)` по генерации поля размером n x n.
-Значение n не может быть меньше 3.
-Для 3х ячеек поля (для выбора ячейки использовать random) добавить атрибут!!! prise.
-Значения атрибута prise - значения ключей объекта
-let prises = {
-    headphones: "Наушники",
-    book: "Книга",
-    postcard: "Открытка"
-};
+Написать функцию `generateField(n)` по генерации поля размером n x n. Значение n не может быть меньше 3.
+Для 3х ячеек поля (для выбора ячейки использовать random) добавить атрибут prise. Значение атрибута prise - значение из объекта prises.
+Пример того, что должно получиться при `n` равным 4 и генерации поля 4 Х 4: [field.png](field.png).
+
+
+         let prises = {
+            headphones: "Наушники",
+            book: "Книга",
+            postcard: "Открытка"
+         };
