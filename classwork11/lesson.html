@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/events.css">
 </head>
 <body>
-
-<div id="sale_container">
+<!-- data-* атрибут-->
+<div id="sale_container"> <!-- обработчик -->
     <h3>Выбор скидки</h3>
     <p data-sale="d137d16e">Скидка</p>
     <p data-sale="a15d25e1">Скидка</p>
@@ -16,6 +16,7 @@
     <p data-sale="a15d25e1">Скидка</p>
     <p data-sale="936b4763">Скидка</p>
 </div>
+
 
 <form name="change-color">
     <div class="choice">
@@ -37,7 +38,8 @@
             <label><input value="javascript" name="lang[]" type="checkbox">JavaScript</label>
         </div>
         <div class="additional-info">
-            <label><input type="checkbox" name="add-info">Отметьте, если хотите указать дополнительную информацию</label>
+            <label><input type="checkbox" name="add-info">
+                Отметьте, если хотите указать дополнительную информацию</label>
             <input name="info" type="text" disabled>
         </div>
     </fieldset>
