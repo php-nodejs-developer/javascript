@@ -67,7 +67,7 @@ console.log(article1, article2);
 // вывести возраст автора статьи article2
 console.log(article2._author.age);
 console.log(article2._author._age);
-console.log(article2._author.#email); // ошибка
+// console.log(article2._author.#email); // ошибка
 console.log(article2._author.email);
 
 
